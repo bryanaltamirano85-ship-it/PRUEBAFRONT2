@@ -52,7 +52,7 @@ const initialState: TableState = {
   filters: {},
 };
 
-// ✅ Reducer tipado
+// Reducer tipado
 function tableReducer(state: TableState, action: TableAction): TableState {
   switch (action.type) {
     case "SET_SORT":
@@ -73,7 +73,7 @@ function tableReducer(state: TableState, action: TableAction): TableState {
   }
 }
 
-// ✅ Formulario de creación/edición
+// Formulario de creación/edición
 interface UserFormProps {
   initial?: User;
   onCancel: () => void;
